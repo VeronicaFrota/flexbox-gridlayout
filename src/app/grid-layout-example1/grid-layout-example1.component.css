@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+    grid-gap: 20px;                          /* Espaço entre os itens */
+    grid-template-columns: repeat(3 , 1fr);  /* Repete 3 vezes com o tamanho de 1fr (aproximadamente 33px) */
+}
+
+.grid > div:nth-child( n + 4 ) {             /* Escolhe o filho da grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;          /* Divide uma parte para a imagem e outra para a legenda */
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid > div.anuncio {
+    grid-column: 1;                         /* Posiciona na primeira coluna */
+    grid-row: 2 / 5;                        /* Posiciona da linha 2 até a linha 5 */
+    display: block;
+    background: #c3c3c3;
+}
+
+/* responsivel, caso o tamanho max seja 600 */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);  /* Passa a ter duas colunas */
+    }
+
+    .grid > div:nth-child( n + 4 ) {
+        display: block;
+    }
+
+    .grid > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;                              /* Altera a order de exibição do anuncio, sendo apresentado na primeira posição */
+    }
+}

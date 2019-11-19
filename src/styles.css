@@ -1,0 +1,38 @@
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ */
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 160%;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.referencia {
+    margin: 50px 0px 50px 10px;
+}
+
+.referencia-item {
+    margin-top: 10px;
+}

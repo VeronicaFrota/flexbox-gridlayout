@@ -1,0 +1,13 @@
+
+.flex {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;    /* Indica para p flex que o mesmo poderá "quebrar" de linha */
+}
+
+.flex > div {           /* Div dentro do flex */ 
+    flex: 1 1 200px;    /* Se não conseguir ter 200px ele "quebra" de linha, ou seja, tem no min 200px*/
+    margin: 10px;
+}
+

@@ -1,0 +1,34 @@
+
+h2 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sideBar > div {
+    margin-bottom: 10px;
+}
+
+/* Responsivel para tamanho menor que 600px */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sideBar{
+        display: flex;
+        overflow: scroll;
+    }
+
+    .sideBar > div {
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,28 @@
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    background: #1D1E20;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
