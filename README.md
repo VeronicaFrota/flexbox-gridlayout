@@ -17,3 +17,9 @@ O projeto consiste em exemplos de layouts responsivos desenvolvidos utilizando f
 ## Como executar
 Execute `ng serve` para executar a versão de desenvolvimento.<br/>
 Depois acesse `http://localhost:4200/`
+
+
+## Referências de estudo para desenvolver projeto 
+- Video: https://www.youtube.com/watch?v=x-4z_u8LcGc
+- Guia Flexbox: https://origamid.com/projetos/flexbox-guia-completo/
+- Curso: https://www.origamid.com/curso/css-flexbox/2-2-flex-direction/
