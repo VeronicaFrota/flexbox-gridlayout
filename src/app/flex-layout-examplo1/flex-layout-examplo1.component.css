@@ -1,4 +1,15 @@
 
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 160%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .flex {
     display: flex;
     max-width: 800px;

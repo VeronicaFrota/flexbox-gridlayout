@@ -1,0 +1,159 @@
+<app-menu></app-menu>
+
+<app-flex-layout-example2-menu></app-flex-layout-example2-menu>
+
+<h1 class="introducao">Novos valores e <br>Prioridades de CSS</h1>
+
+<section class="sobre" id="sobre">
+	<div class="sobre-info">
+		<h1>Sobre</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac enim ut dolor
+			elementum pulvinar eu sed elit. </p>
+
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan augue eget
+			lacus hendrerit eleifend. Duis elementum, urna quis tincidunt fringilla, lacus libero
+			porta tortor, eget tristique diam libero vitae dolor.</p>
+	</div>
+
+	<div class="sobre-img">
+		<img src="../../assets/vacation.jpg">
+	</div>
+	<div class="sobre-img">
+		<img src="../../assets/NewYorkSkyline.jpg">
+	</div>
+</section>
+
+<section class="produtos" id="produtos">
+	<h1>Produtos</h1>
+
+	<div class="produtos-container">
+		<div class="produtos-item pink">
+			<h2>Paris</h2>
+			<img src="../../assets/pink-cities.jpg">
+		</div>
+
+		<div class="produtos-item purple">
+			<h2>Canadá</h2>
+			<img src="../../assets/skyPurple.jpg">
+		</div>
+
+		<div class="produtos-item blue">
+			<h2>New York</h2>
+			<img src="../../assets/beautifulNewYork.jpeg">
+		</div>
+	</div>
+</section>
+
+<section class="preco" id="preco">
+	<div class="preco-item">
+		<h2>Cobre</h2>
+		<span><sup>R$</sup>19</span>
+		<ul>
+			<li>Plano Ilimitado</li>
+			<li>Acesso Restrito</li>
+			<li>Conteudo Secreto</li>
+			<li>Suporte 24 horas</li>
+		</ul>
+		<button mat-stroked-button id="botao-comprar">
+			<mat-icon>shopping_cart</mat-icon> Comprar
+		</button>
+		<!-- <a href="#">Comprar</a> -->
+	</div>
+
+	<div class="preco-item">
+		<h2>Prata</h2>
+		<span><sup>R$</sup>39</span>
+		<ul>
+			<li>Plano Ilimitado</li>
+			<li>Acesso Restrito</li>
+			<li>Conteudo Secreto</li>
+			<li>Suporte 24 horas</li>
+			<li>Compra Exclusiva</li>
+		</ul>
+		<button mat-stroked-button id="botao-comprar">
+			<mat-icon>shopping_cart</mat-icon> Comprar
+		</button>
+		<!-- <a href="#">Comprar</a> -->
+	</div>
+
+	<div class="preco-item">
+		<h2>Ouro </h2>
+		<span><sup>R$</sup>79</span>
+		<ul>
+			<li>Plano Ilimitado</li>
+			<li>Acesso Restrito</li>
+			<li>Conteudo Secreto</li>
+			<li>Suporte 24 horas</li>
+			<li>Conteudo exclusivo</li>
+			<li>Download dos Itens</li>
+		</ul>
+		<button mat-stroked-button id="botao-comprar">
+			<mat-icon>shopping_cart</mat-icon> Comprar
+		</button>
+		<!-- <a href="#">Comprar</a> -->
+	</div>
+</section>
+
+<section class="qualidade" id="qualidade">
+	<div class="qualidade-item">
+		<h2>Inteligente</h2>
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan
+			augue eget lacus hendrerit eleifend. Duis elementum, lacus libero
+			porta tortor</p>
+	</div>
+
+	<div class="qualidade-item">
+		<h2>Compacto</h2>
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan
+			augue eget lacus hendrerit eleifend. Duis elementum, lacus libero
+			porta tortor.Nullam eleifend mattis augue sed interdum. Nam iaculis
+			elit ac nisl vulputate, gravida consectetur sem fermentum. interdum Nam
+			iaculiselit ac nisl vulputate, gravida consectetur sem fermentum</p>
+	</div>
+
+	<div class="qualidade-item">
+		<h2>Econômico</h2>
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan
+			augue eget lacus hendrerit eleifend. Duis elementum, lacus libero
+			porta tortor</p>
+	</div>
+
+	<div class="qualidade-item">
+		<h2>Transparente</h2>
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan
+			augue eget lacus hendrerit eleifend. Duis elementum, lacus libero
+			porta tortor</p>
+	</div>
+
+	<div class="qualidade-item">
+		<h2>Opaco</h2>
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan
+			augue eget lacus hendrerit eleifend. Duis elementum, lacus libero
+			porta tortor</p>
+	</div>
+
+	<div class="qualidade-item">
+		<h2>Sustentávell</h2>
+		<p>Nam velit metus, mollis id bibendum non, tempor non lorem. Nam accumsan
+			augue eget lacus hendrerit eleifend. Duis elementum, lacus libero
+			porta tortor.Nullam eleifend mattis augue sed interdum. Nam iaculis
+			elit ac nisl vulputate, gravida consectetur sem fermentum.interdum. Nam
+			iaculis elit ac nisl vulputate, gravida consectetur sem fermentum</p>
+	</div>
+</section>
+
+<section class="newsletter">
+	<div class="newsletter-info">
+		<h1>Newsletter</h1>
+		<p>Assine e fique por dentro das novidades</p>
+	</div>
+
+	<form [formGroup]="form" class="newsletter-form">
+		<mat-form-field>
+			<input matInput placeholder="E-mail" formControlName="email">
+		</mat-form-field>
+		<button mat-stroked-button>Assinar</button>
+	</form>
+</section>
+
+<app-flex-layout-example2-footer></app-flex-layout-example2-footer>
